@@ -1,0 +1,270 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, b, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Colors */
+/* Font */
+/* Mixins */
+/* Colors */
+/* Font */
+/* Mixins */
+.header {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background-image: linear-gradient(120deg, rgb(233, 72, 47) 0%, rgb(231, 36, 86) 100%);
+  box-sizing: border-box;
+  padding: 0 2.375rem;
+  width: 100%;
+  height: 140px;
+}
+.header .icon {
+  position: absolute;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+.header .icon__traits {
+  background-image: url(../../img/Icon/traits.png);
+  top: 20px;
+  left: -20px;
+  width: 157px;
+  height: 157px;
+}
+.header .icon__arrow {
+  background-image: url(../../img/Icon/left-arrow.png);
+  left: 40%;
+  transform: translateX(40%);
+  top: 18px;
+  width: 48px;
+  height: 20px;
+}
+.header .icon__marbles {
+  background-image: url(../../img/Icon/marbles.png);
+  left: 42%;
+  transform: translateX(-35%);
+  bottom: -36px;
+  width: 37px;
+  height: 62px;
+}
+.header .icon__woman {
+  background-image: url(../../img/Icon/woman.png);
+  left: 62%;
+  transform: translateX(-62%);
+  top: 50px;
+  width: 134px;
+  height: 153px;
+}
+.header .icon__triangle {
+  background-image: url(../../img/Icon/triangle.png);
+  right: 20px;
+  top: 3px;
+  width: 23px;
+  height: 23px;
+}
+.header .icon__zigzag {
+  background-image: url(../../img/Icon/zigzag.png);
+  right: 40px;
+  bottom: 20px;
+  width: 78px;
+  height: 8px;
+}
+.header .container__info .header__subtitle {
+  color: "";
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: 0.0437rem;
+  text-align: right;
+  max-width: 140px;
+  margin-top: -14px;
+}
+.header .container__info .header__editon {
+  color: "";
+  font-size: 0.625rem;
+  font-weight: 400;
+  line-height: 0.8125rem;
+  letter-spacing: 0.0313rem;
+  text-align: right;
+  margin-top: 0.75rem;
+}
+
+/* Colors */
+/* Font */
+/* Mixins */
+.main {
+  position: relative;
+  margin: 1.75rem 2.25rem 0 2.25rem;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 0.875rem;
+       column-gap: 0.875rem;
+  row-gap: 2.375rem;
+  padding-bottom: 1.25rem;
+}
+.main .card {
+  grid-column: 1/3;
+}
+.main .card__img {
+  width: 100%;
+}
+.main .card__title {
+  color: rgb(35, 31, 32);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5632rem;
+  letter-spacing: -0.0431rem;
+  margin-top: 0.875rem;
+}
+.main .card__description {
+  color: rgb(116, 120, 122);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.0726rem;
+  letter-spacing: -0.0081rem;
+  margin-top: 0.5rem;
+}
+.main .card__source {
+  color: rgb(178, 178, 178);
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.0726rem;
+  letter-spacing: -0.0068rem;
+  margin-top: 1rem;
+}
+.main .card__line {
+  display: block;
+  background-image: linear-gradient(120deg, rgb(231, 36, 86) 0%, rgb(108, 91, 163) 100%);
+  width: 257px;
+  height: 4px;
+  margin-top: 0.5rem;
+}
+.main .card-alt__img {
+  width: 100%;
+  height: 190px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .card-alt__title {
+  color: rgb(35, 31, 32);
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.3997rem;
+  letter-spacing: -0.0151rem;
+  margin-top: 0.875rem;
+}
+.main .card-alt__source {
+  color: rgb(178, 178, 178);
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.0726rem;
+  letter-spacing: -0.0068rem;
+  margin-top: 1rem;
+}
+.main .card-alt__line {
+  display: block;
+  width: 162px;
+  height: 4px;
+}
+.main .card-alt .nba {
+  background-image: linear-gradient(120deg, rgb(118, 197, 207) 0%, rgb(108, 91, 163) 100%);
+}
+.main .card-alt .whatsapp {
+  background-image: linear-gradient(120deg, rgb(118, 197, 207) 0%, rgb(57, 179, 139) 100%);
+}
+
+/* Colors */
+/* Font */
+/* Mixins */
+.footer {
+  margin-bottom: 1rem;
+}
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(252, 76, 2);
+  padding: 1rem 0;
+}
+.footer__logo__img {
+  margin: 0 auto;
+}
+.footer__copyright, .footer__unsubscribe {
+  color: rgb(116, 120, 122);
+  font-size: 0.6875rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 0.75rem;
+  margin-top: 1.125rem;
+}
+.footer__copyright__link, .footer__unsubscribe__link {
+  color: rgb(116, 120, 122);
+  text-decoration: underline;
+}
+
+body {
+  background-color: rgb(242, 242, 242);
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 600px;
+  width: 80%;
+  margin: 0 auto;
+}
+body .container {
+  background-color: white;
+  padding-top: 1.25rem;
+}/*# sourceMappingURL=base.css.map */

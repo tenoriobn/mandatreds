@@ -1,0 +1,21 @@
+@import './reset';
+@import './variaveis';
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+@import '../2-componentes/1-header';
+@import '../2-componentes/2-main';
+@import '../2-componentes/3-footer';
+
+body {
+    background-color: $lightgray;
+    color: $white;
+    font-family: $arial;
+    max-width: 600px;
+    width: 80%;
+    margin: 0 auto;
+
+    .container {
+        background-color: white;
+
+        padding-top: 1.25rem;
+    }
+}

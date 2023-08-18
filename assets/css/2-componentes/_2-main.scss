@@ -1,0 +1,98 @@
+@import '../1-base/variaveis';
+
+.main {
+    position: relative;
+
+    margin: 1.75rem 2.25rem 0 2.25rem;
+    z-index: 10;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: .875rem;
+    row-gap: 2.375rem;
+
+    padding-bottom: 1.25rem;
+
+    .card {
+        grid-column: 1 / 3;
+
+        &__img{
+            width: 100%;
+        }
+        
+        &__title {
+            @include font-styling($darkgrey, 1.5rem, 700);
+            line-height: 1.5632rem;
+            letter-spacing: -0.0431rem;
+
+            margin-top: .875rem;
+        }
+
+        &__description {
+            @include font-styling($hailgray, .875rem, 400);
+            line-height: 1.0726rem;
+            letter-spacing: -0.0081rem;
+            margin-top: .5rem;
+        }
+
+        &__source {
+            @include font-styling($gray, .75rem, 400);
+            font-style: italic;
+            line-height: 1.0726rem;
+            letter-spacing: -0.0068rem;
+
+            margin-top: 1rem;
+        }
+
+        &__line {
+            display: block;
+
+            background-image: linear-gradient(120deg, $pink 0%, $purple 100%);
+
+            width: 257px;
+            height: 4px;
+
+            margin-top: .5rem;
+        }
+    }
+
+    .card-alt {
+        &__img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        &__title {
+            @include font-styling($darkgrey, 1.125rem, 700);
+            line-height: 1.3997rem;
+            letter-spacing: -0.0151rem;
+
+            margin-top: .875rem;
+        }
+
+        &__source {
+            @include font-styling($gray, .75rem, 400);
+            font-style: italic;
+            line-height: 1.0726rem;
+            letter-spacing: -0.0068rem;
+
+            margin-top: 1rem;
+        }
+
+        &__line {
+            display: block;
+
+            width: 162px;
+            height: 4px;
+        }
+        
+        .nba {
+            background-image: linear-gradient(120deg, $babyBlue 0%, $purple 100%);
+        }
+
+        .whatsapp {
+            background-image: linear-gradient(120deg, $babyBlue 0%, $emeraldgreen 100%);
+        }
+    }
+}
