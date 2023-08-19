@@ -8,18 +8,16 @@
     justify-content: space-between;
     
     background-image: linear-gradient(120deg, $orange 0%, $pink 100%);
-    
     box-sizing: border-box;
     
-    padding: 0 24px;
-    
-    width: 100%;
-    height: 117px;
+    padding: 0 1rem;
+
+    height: 90px;
 
     z-index: 1;
 
     .header__title {
-        max-width: 110px;
+        max-width: 84px;
     }
 
     .header__icons {
@@ -33,28 +31,28 @@
         .icon__traits {
             background-image: url(../../img/Icon/traits.png);
     
-            top: 19px;
-            left: -44px;
+            top: 16%;
+            left: -7%;
 
-            width: 140px;
-            height: 140px;
+            width: 90px;
+            height: 90px;
         }
     
         .icon__arrow {
             background-image: url(../../img/Icon/left-arrow.png);
     
-            left: 45%;
-            top: 16px;
+            left: 39%;
+            top: 13%;
 
-            width: 25px;
+            width: 21px;
             height: 10px;
         }
     
         .icon__marbles {
             background-image: url(../../img/Icon/marbles.png);
     
-            left: 37%;
-            bottom: -18px;
+            left: 32%;
+            bottom: -20%;
 
             width: 20px;
             height: 32px;
@@ -63,380 +61,228 @@
         .icon__woman {
             background-image: url(../../img/Icon/woman.png);
     
-            left: 45%;
-            top: 59px;
+            left: 39%;
+            top: 40%;
 
-            width: 134px;
-            height: 100px;
+            width: 80px;
+            height: 94px;
         }
     
         .icon__triangle {
             background-image: url(../../img/Icon/triangle.png);
     
-            right: 13px;
-            top: 12px;
+            right: 2%;
+            top: 9%;
 
-            width: 12px;
-            height: 12px;
+            width: 10px;
+            height: 10px;
         }
     
         .icon__zigzag {
             background-image: url(../../img/Icon/zigzag.png);
     
-            right: 23px;
-            bottom: 14px;
+            right: 5%;
+            bottom: 10%;
 
-            width: 64px;
-            height: 8px;
+            width: 50px;
+            height: 5px;
         }
     }
 
     .container__info {
-        .header__subtitle {
-            @include font-styling('', 10px, 400);
-            line-height: .75rem;
-            letter-spacing: .0137rem;
-            text-align: right;
-
+        .header__subtitle, .header__editon {
+            @include font-styling($white, .625rem, 400, .75rem, .0137rem, right);
             max-width: 140px;
         }
 
         .header__editon {
-            @include font-styling('', 8px, 400);
-            line-height: .8125rem;
-            letter-spacing: .1200rem;
-            text-align: right;
-
-            margin-top: .375rem;
+            font-size: .5rem;
+            letter-spacing: .0937rem;
+            margin-top: .25rem;
         }
     }
 }
 
 @media screen and (min-width: 375px) {
-    .header {
-        position: relative;
-    
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        
-        background-image: linear-gradient(120deg, $orange 0%, $pink 100%);
-        
-        box-sizing: border-box;
-        
-        padding: 0 24px;
-        
-        width: 100%;
-        height: 117px;
-    
-        z-index: 1;
+    .header {       
+        height: 100px;
+        padding: 0 1.5rem;
     
         .header__title {
-            max-width: 110px;
+            max-width: 106px;
         }
     
         .header__icons {
-            .icon {
-                position: absolute;
-        
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-        
             .icon__traits {
-                background-image: url(../../img/Icon/traits.png);
-        
-                top: 19px;
-                left: -44px;
-                
-                width: 140px;
-                height: 140px;
+                top: 16%;
+                left: -6%;
+
+                width: 74px;
+                height: 108px;
             }
         
             .icon__arrow {
-                background-image: url(../../img/Icon/left-arrow.png);
-        
-                left: 45%;
-                top: 16px;
-    
-                width: 25px;
-                height: 10px;
+                left: 40%;
             }
         
             .icon__marbles {
-                background-image: url(../../img/Icon/marbles.png);
-        
-                left: 37%;
-                bottom: -18px;
-    
-                width: 20px;
-                height: 32px;
+                left: 35%;
+                bottom: -18%;
             }
         
             .icon__woman {
-                background-image: url(../../img/Icon/woman.png);
-        
-                left: 45%;
-                top: 59px;
+                left: 40%;
+                top: 41%;
     
-                width: 134px;
+                width: 90px;
                 height: 100px;
             }
         
             .icon__triangle {
-                background-image: url(../../img/Icon/triangle.png);
-        
-                right: 13px;
-                top: 12px;
+                right: 3%;
+                top: 7%;
     
-                width: 12px;
-                height: 12px;
+                width: 14px;
+                height: 14px;
             }
         
             .icon__zigzag {
-                background-image: url(../../img/Icon/zigzag.png);
-        
-                right: 23px;
-                bottom: 14px;
+                right: 7%;
+                bottom: 9%;
     
-                width: 64px;
+                width: 72px;
                 height: 8px;
             }
         }
     
         .container__info {
-            .header__subtitle {
-                @include font-styling('', 10px, 400);
-                line-height: .75rem;
-                letter-spacing: .0137rem;
-                text-align: right;
-    
-                max-width: 140px;
+            .header__subtitle, .header__editon {
+                font-size: .75rem;
             }
     
             .header__editon {
-                @include font-styling('', 8px, 400);
-                line-height: .8125rem;
-                letter-spacing: .1200rem;
-                text-align: right;
-    
+                font-size: .625rem;
                 margin-top: .375rem;
             }
         }
     }
 }
 
-@media screen and (min-width: 768px) {
-    .header {
-        padding: 0 2.375rem;
+@media screen and (min-width: 425px) {
+    .header {       
+        height: 120px;
     
-        width: 100%;
-        height: 140px;
-
-        
         .header__title {
-            max-width: 189px;
+            max-width: 120px;
         }
     
         .header__icons {
-            .icon {
-                position: absolute;
-        
-                background-size: auto;
-                background-repeat: no-repeat;
-            }
-        
             .icon__traits {
-                background-image: url(../../img/Icon/traits.png);
-        
-                top: 20px;
-                left: -20px;
-                width: 157px;
-                height: 157px;
+                top: 14%;
+
+                width: 80px;
+                height: 120px;
             }
         
             .icon__arrow {
-                background-image: url(../../img/Icon/left-arrow.png);
-        
-                left: 44.5%;
-                transform: translateX(44%);
-        
-                top: 18px;
-                width: 48px;
-                height: 20px;
+                left: 42%;
+
+                width: 26px;
+                height: 12px;
             }
         
             .icon__marbles {
-                background-image: url(../../img/Icon/marbles.png);
-        
-                left: 42%;
-                transform: translateX(-35%);
-        
-                bottom: -36px;
-                width: 37px;
-                height: 62px;
+                bottom: -15%;
             }
         
             .icon__woman {
-                background-image: url(../../img/Icon/woman.png);
-        
-                left: 62%;
-                transform: translateX(-62%);
-        
-                top: 50px;
-                width: 134px;
-                height: 153px;
+                left: 42%;
+                top: 42%;
+    
+                width: 104px;
+                height: 118px;
             }
         
             .icon__triangle {
-                background-image: url(../../img/Icon/triangle.png);
-        
-                right: 20px;
-        
-                top: 3px;
-                width: 23px;
-                height: 23px;
+                right: 2%;
+    
+                width: 16px;
+                height: 16px;
             }
         
             .icon__zigzag {
-                background-image: url(../../img/Icon/zigzag.png);
-        
-                right: 40px;
-        
-                bottom: 20px;
-                width: 78px;
-                height: 8px;
-            }
-        }
-    
-    
-        .container__info {
-            .header__subtitle {
-                @include font-styling('', .875rem, 400);
-                line-height: 1rem;
-                letter-spacing: .0437rem;
-                text-align: right;
-    
-                max-width: 140px;
-                
-                margin-top: -14px;
-            }
-    
-            .header__editon {
-                @include font-styling('', .625rem, 400);
-                line-height: .8125rem;
-                letter-spacing: .0313rem;
-                text-align: right;
-    
-                margin-top: .75rem;
+                right: 6%;
+                bottom: 12%;
             }
         }
     }
 }
 
-@media screen and (min-width: 992px) {
-    .header {
-        padding: 0 2.375rem;
-    
-        width: 100%;
+@media screen and (min-width: 768px) {
+    .header {       
         height: 140px;
-
-        
+        padding: 0 38px;
+    
         .header__title {
             max-width: 189px;
         }
     
         .header__icons {
-            .icon {
-                position: absolute;
-        
-                background-size: auto;
-                background-repeat: no-repeat;
-            }
-        
             .icon__traits {
-                background-image: url(../../img/Icon/traits.png);
-        
-                top: 20px;
-                left: -20px;
-                width: 157px;
+                top: 15%;
+                left: -3.2%;
+
+                width: 105px;
                 height: 157px;
             }
         
             .icon__arrow {
-                background-image: url(../../img/Icon/left-arrow.png);
-        
-                left: 44.5%;
-                transform: translateX(44%);
-        
-                top: 18px;
+                left: 49%;
+                
                 width: 48px;
                 height: 20px;
             }
         
             .icon__marbles {
-                background-image: url(../../img/Icon/marbles.png);
-        
-                left: 42%;
-                transform: translateX(-35%);
-        
-                bottom: -36px;
+                left: 39%;
+                bottom: -25%;
+
                 width: 37px;
                 height: 62px;
             }
         
             .icon__woman {
-                background-image: url(../../img/Icon/woman.png);
-        
-                left: 62%;
-                transform: translateX(-62%);
-        
-                top: 50px;
+                left: 49%;
+                top: 34%;
+    
                 width: 134px;
                 height: 153px;
             }
         
             .icon__triangle {
-                background-image: url(../../img/Icon/triangle.png);
-        
-                right: 20px;
-        
-                top: 3px;
+                right: 3%;
+                top: 3%;
+    
                 width: 23px;
                 height: 23px;
             }
         
             .icon__zigzag {
-                background-image: url(../../img/Icon/zigzag.png);
-        
-                right: 40px;
-        
-                bottom: 20px;
+                bottom: 9%;
+
                 width: 78px;
-                height: 8px;
             }
         }
-    
-    
+
         .container__info {
             .header__subtitle {
-                @include font-styling('', .875rem, 400);
+                font-size: .875rem;
                 line-height: 1rem;
-                letter-spacing: .0437rem;
-                text-align: right;
-    
-                max-width: 140px;
-                
-                margin-top: -14px;
+                letter-spacing: .0375rem;
             }
     
             .header__editon {
-                @include font-styling('', .625rem, 400);
-                line-height: .8125rem;
-                letter-spacing: .0313rem;
-                text-align: right;
-    
-                margin-top: .75rem;
+                margin-top: 1.125rem;
             }
         }
     }

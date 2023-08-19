@@ -15,8 +15,12 @@ $white: rgb(255, 255, 255);
 $arial: Arial, Helvetica, sans-serif;
 
 /* Mixins */
-@mixin font-styling($color, $font-size, $font-weight) {
+@mixin font-styling($color, $font-size, $font-weight, $line-height, $letter-spacing, $text-align) {
     color: $color;
     font-size: $font-size;
     font-weight: $font-weight;
+    line-height :$line-height;
+    letter-spacing :$letter-spacing; 
+    text-align :$text-align;
+    
 }

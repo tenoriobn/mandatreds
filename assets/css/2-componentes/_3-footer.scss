@@ -1,7 +1,7 @@
 @import '../1-base/variaveis';
 
 .footer {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 
     &__logo {
         display: flex;
@@ -15,12 +15,10 @@
         }
     }
 
-    &__copyright,  &__unsubscribe {
-        padding: 0 1.5rem;
+    &__copyright {
+        padding: 0 1rem;
         
-        @include font-styling($hailgray, .625rem, 400);
-        text-align: center;
-        line-height: .75rem;
+        @include font-styling($hailgray, .625rem, 400, .75rem, '', center);
         margin-top: 1.125rem;
 
         &__link {
@@ -30,32 +28,10 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 375px) {
     .footer {
-        margin-bottom: 1rem;
-    
-        &__logo {
-            display: flex;
-            justify-content: center;
-    
-            background-color: $warmred;
-            padding: 1rem 0;
-    
-            &__img {
-                margin: 0 auto
-            }
+        &__copyright {
+            padding: 0 1.5rem;
         }
-    
-        &__copyright,  &__unsubscribe {
-            @include font-styling($hailgray, .6875rem, 400);
-            text-align: center;
-            line-height: .75rem;
-            margin-top: 1.125rem;
-    
-            &__link {
-                color: $hailgray;
-                text-decoration: underline;
-            }
-        }
-    }
+    }    
 }
