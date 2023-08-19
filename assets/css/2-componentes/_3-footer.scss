@@ -16,7 +16,9 @@
     }
 
     &__copyright,  &__unsubscribe {
-        @include font-styling($hailgray, .6875rem, 400);
+        padding: 0 1.5rem;
+        
+        @include font-styling($hailgray, .625rem, 400);
         text-align: center;
         line-height: .75rem;
         margin-top: 1.125rem;
@@ -24,6 +26,36 @@
         &__link {
             color: $hailgray;
             text-decoration: underline;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        margin-bottom: 1rem;
+    
+        &__logo {
+            display: flex;
+            justify-content: center;
+    
+            background-color: $warmred;
+            padding: 1rem 0;
+    
+            &__img {
+                margin: 0 auto
+            }
+        }
+    
+        &__copyright,  &__unsubscribe {
+            @include font-styling($hailgray, .6875rem, 400);
+            text-align: center;
+            line-height: .75rem;
+            margin-top: 1.125rem;
+    
+            &__link {
+                color: $hailgray;
+                text-decoration: underline;
+            }
         }
     }
 }

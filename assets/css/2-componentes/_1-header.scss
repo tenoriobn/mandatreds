@@ -1,109 +1,443 @@
 @import '../1-base/variaveis';
 
 .header {
-    z-index: 1;
+    position: relative;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
-
+    
     background-image: linear-gradient(120deg, $orange 0%, $pink 100%);
-
+    
     box-sizing: border-box;
-
-    padding: 0 2.375rem;
-
+    
+    padding: 0 24px;
+    
     width: 100%;
-    height: 140px;
+    height: 117px;
 
-    .icon {
-        position: absolute;
+    z-index: 1;
 
-        background-size: auto;
-        background-repeat: no-repeat;
+    .header__title {
+        max-width: 110px;
     }
 
-    .icon__traits {
-        background-image: url(../../img/Icon/traits.png);
+    .header__icons {
+        .icon {
+            position: absolute;
+    
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    
+        .icon__traits {
+            background-image: url(../../img/Icon/traits.png);
+    
+            top: 19px;
+            left: -44px;
 
-        top: 20px;
-        left: -20px;
-        width: 157px;
-        height: 157px;
-    }
+            width: 140px;
+            height: 140px;
+        }
+    
+        .icon__arrow {
+            background-image: url(../../img/Icon/left-arrow.png);
+    
+            left: 45%;
+            top: 16px;
 
-    .icon__arrow {
-        background-image: url(../../img/Icon/left-arrow.png);
+            width: 25px;
+            height: 10px;
+        }
+    
+        .icon__marbles {
+            background-image: url(../../img/Icon/marbles.png);
+    
+            left: 37%;
+            bottom: -18px;
 
-        left: 40%;
-        transform: translateX(40%);
+            width: 20px;
+            height: 32px;
+        }
+    
+        .icon__woman {
+            background-image: url(../../img/Icon/woman.png);
+    
+            left: 45%;
+            top: 59px;
 
-        top: 18px;
-        width: 48px;
-        height: 20px;
-    }
+            width: 134px;
+            height: 100px;
+        }
+    
+        .icon__triangle {
+            background-image: url(../../img/Icon/triangle.png);
+    
+            right: 13px;
+            top: 12px;
 
-    .icon__marbles {
-        background-image: url(../../img/Icon/marbles.png);
+            width: 12px;
+            height: 12px;
+        }
+    
+        .icon__zigzag {
+            background-image: url(../../img/Icon/zigzag.png);
+    
+            right: 23px;
+            bottom: 14px;
 
-        left: 42%;
-        transform: translateX(-35%);
-
-        bottom: -36px;
-        width: 37px;
-        height: 62px;
-    }
-
-    .icon__woman {
-        background-image: url(../../img/Icon/woman.png);
-
-        left: 62%;
-        transform: translateX(-62%);
-
-        top: 50px;
-        width: 134px;
-        height: 153px;
-    }
-
-    .icon__triangle {
-        background-image: url(../../img/Icon/triangle.png);
-
-        right: 20px;
-
-        top: 3px;
-        width: 23px;
-        height: 23px;
-    }
-
-    .icon__zigzag {
-        background-image: url(../../img/Icon/zigzag.png);
-
-        right: 40px;
-
-        bottom: 20px;
-        width: 78px;
-        height: 8px;
+            width: 64px;
+            height: 8px;
+        }
     }
 
     .container__info {
         .header__subtitle {
-            @include font-styling('', .875rem, 400);
-            line-height: 1rem;
-            letter-spacing: .0437rem;
+            @include font-styling('', 10px, 400);
+            line-height: .75rem;
+            letter-spacing: .0137rem;
             text-align: right;
 
             max-width: 140px;
-            
-            margin-top: -14px;
         }
 
         .header__editon {
-            @include font-styling('', .625rem, 400);
+            @include font-styling('', 8px, 400);
             line-height: .8125rem;
-            letter-spacing: .0313rem;
+            letter-spacing: .1200rem;
             text-align: right;
 
-            margin-top: .75rem;
+            margin-top: .375rem;
+        }
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .header {
+        position: relative;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        background-image: linear-gradient(120deg, $orange 0%, $pink 100%);
+        
+        box-sizing: border-box;
+        
+        padding: 0 24px;
+        
+        width: 100%;
+        height: 117px;
+    
+        z-index: 1;
+    
+        .header__title {
+            max-width: 110px;
+        }
+    
+        .header__icons {
+            .icon {
+                position: absolute;
+        
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        
+            .icon__traits {
+                background-image: url(../../img/Icon/traits.png);
+        
+                top: 19px;
+                left: -44px;
+                
+                width: 140px;
+                height: 140px;
+            }
+        
+            .icon__arrow {
+                background-image: url(../../img/Icon/left-arrow.png);
+        
+                left: 45%;
+                top: 16px;
+    
+                width: 25px;
+                height: 10px;
+            }
+        
+            .icon__marbles {
+                background-image: url(../../img/Icon/marbles.png);
+        
+                left: 37%;
+                bottom: -18px;
+    
+                width: 20px;
+                height: 32px;
+            }
+        
+            .icon__woman {
+                background-image: url(../../img/Icon/woman.png);
+        
+                left: 45%;
+                top: 59px;
+    
+                width: 134px;
+                height: 100px;
+            }
+        
+            .icon__triangle {
+                background-image: url(../../img/Icon/triangle.png);
+        
+                right: 13px;
+                top: 12px;
+    
+                width: 12px;
+                height: 12px;
+            }
+        
+            .icon__zigzag {
+                background-image: url(../../img/Icon/zigzag.png);
+        
+                right: 23px;
+                bottom: 14px;
+    
+                width: 64px;
+                height: 8px;
+            }
+        }
+    
+        .container__info {
+            .header__subtitle {
+                @include font-styling('', 10px, 400);
+                line-height: .75rem;
+                letter-spacing: .0137rem;
+                text-align: right;
+    
+                max-width: 140px;
+            }
+    
+            .header__editon {
+                @include font-styling('', 8px, 400);
+                line-height: .8125rem;
+                letter-spacing: .1200rem;
+                text-align: right;
+    
+                margin-top: .375rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        padding: 0 2.375rem;
+    
+        width: 100%;
+        height: 140px;
+
+        
+        .header__title {
+            max-width: 189px;
+        }
+    
+        .header__icons {
+            .icon {
+                position: absolute;
+        
+                background-size: auto;
+                background-repeat: no-repeat;
+            }
+        
+            .icon__traits {
+                background-image: url(../../img/Icon/traits.png);
+        
+                top: 20px;
+                left: -20px;
+                width: 157px;
+                height: 157px;
+            }
+        
+            .icon__arrow {
+                background-image: url(../../img/Icon/left-arrow.png);
+        
+                left: 44.5%;
+                transform: translateX(44%);
+        
+                top: 18px;
+                width: 48px;
+                height: 20px;
+            }
+        
+            .icon__marbles {
+                background-image: url(../../img/Icon/marbles.png);
+        
+                left: 42%;
+                transform: translateX(-35%);
+        
+                bottom: -36px;
+                width: 37px;
+                height: 62px;
+            }
+        
+            .icon__woman {
+                background-image: url(../../img/Icon/woman.png);
+        
+                left: 62%;
+                transform: translateX(-62%);
+        
+                top: 50px;
+                width: 134px;
+                height: 153px;
+            }
+        
+            .icon__triangle {
+                background-image: url(../../img/Icon/triangle.png);
+        
+                right: 20px;
+        
+                top: 3px;
+                width: 23px;
+                height: 23px;
+            }
+        
+            .icon__zigzag {
+                background-image: url(../../img/Icon/zigzag.png);
+        
+                right: 40px;
+        
+                bottom: 20px;
+                width: 78px;
+                height: 8px;
+            }
+        }
+    
+    
+        .container__info {
+            .header__subtitle {
+                @include font-styling('', .875rem, 400);
+                line-height: 1rem;
+                letter-spacing: .0437rem;
+                text-align: right;
+    
+                max-width: 140px;
+                
+                margin-top: -14px;
+            }
+    
+            .header__editon {
+                @include font-styling('', .625rem, 400);
+                line-height: .8125rem;
+                letter-spacing: .0313rem;
+                text-align: right;
+    
+                margin-top: .75rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header {
+        padding: 0 2.375rem;
+    
+        width: 100%;
+        height: 140px;
+
+        
+        .header__title {
+            max-width: 189px;
+        }
+    
+        .header__icons {
+            .icon {
+                position: absolute;
+        
+                background-size: auto;
+                background-repeat: no-repeat;
+            }
+        
+            .icon__traits {
+                background-image: url(../../img/Icon/traits.png);
+        
+                top: 20px;
+                left: -20px;
+                width: 157px;
+                height: 157px;
+            }
+        
+            .icon__arrow {
+                background-image: url(../../img/Icon/left-arrow.png);
+        
+                left: 44.5%;
+                transform: translateX(44%);
+        
+                top: 18px;
+                width: 48px;
+                height: 20px;
+            }
+        
+            .icon__marbles {
+                background-image: url(../../img/Icon/marbles.png);
+        
+                left: 42%;
+                transform: translateX(-35%);
+        
+                bottom: -36px;
+                width: 37px;
+                height: 62px;
+            }
+        
+            .icon__woman {
+                background-image: url(../../img/Icon/woman.png);
+        
+                left: 62%;
+                transform: translateX(-62%);
+        
+                top: 50px;
+                width: 134px;
+                height: 153px;
+            }
+        
+            .icon__triangle {
+                background-image: url(../../img/Icon/triangle.png);
+        
+                right: 20px;
+        
+                top: 3px;
+                width: 23px;
+                height: 23px;
+            }
+        
+            .icon__zigzag {
+                background-image: url(../../img/Icon/zigzag.png);
+        
+                right: 40px;
+        
+                bottom: 20px;
+                width: 78px;
+                height: 8px;
+            }
+        }
+    
+    
+        .container__info {
+            .header__subtitle {
+                @include font-styling('', .875rem, 400);
+                line-height: 1rem;
+                letter-spacing: .0437rem;
+                text-align: right;
+    
+                max-width: 140px;
+                
+                margin-top: -14px;
+            }
+    
+            .header__editon {
+                @include font-styling('', .625rem, 400);
+                line-height: .8125rem;
+                letter-spacing: .0313rem;
+                text-align: right;
+    
+                margin-top: .75rem;
+            }
         }
     }
 }

@@ -11,57 +11,68 @@
 <body>
     <div class="container">
         <header class="header">
-            <span class="icon icon__traits"></span>
-            <img src="assets/img/images/title.png" alt="" class="img-title">
 
-            <span class="icon icon__arrow"></span>
-            <span class="icon icon__marbles"></span>
-            <span class="icon icon__woman"></span>
-            <span class="icon icon__triangle"></span>
-            <span class="icon icon__zigzag"></span>
+            <!-- Título da página em imagem -->
+            <img src="assets/img/images/title.png" alt="Manda Treds" class="header__title">
+        
+            <!-- Ícone do header -->
+            <div class="header__icons">
+                <span class="icon icon__traits"></span>
+                <span class="icon icon__arrow"></span>
+                <span class="icon icon__marbles"></span>
+                <span class="icon icon__woman"></span>
+                <span class="icon icon__triangle"></span>
+                <span class="icon icon__zigzag"></span>
+            </div>
 
+            <!-- Informações do header -->
             <div class="container__info">
                 <h3 class="header__subtitle">NRF2020,<br> Kobe Bryant e<br> WhatsApp Payment</h3>
-                <h4 class="header__editon">edição 06</h3>
+                <h4 class="header__editon">edição 06</h4>
             </div> 
         </header>
 
         <main class="main">
-            <article class="card">
-                <img src="assets/img/images/card1.png" alt="" class="card__img">
-                <h2 class="card__title">NRF 2020: conheça os top 5 assuntos do evento.</h2>
-                <p class="card__description">O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações para o setor.</p>
-                <p class="card__source">Fonte: CMO ADOBE</p>
-                <span class="card__line"></span>
+            <!-- Card Principal -->
+            <article class="featured__card">
+                <img src="assets/img/images/card1.png" alt="Imagem do evento NRF 2020" class="featured__card__img">
+                <h2 class="featured__card__title">NRF 2020: conheça os top 5 assuntos do evento.</h2>
+                <p class="featured__card__description">O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações para o setor.</p>
+                <p class="featured__card__source">Fonte: CMO ADOBE</p>
+                <span class="featured__card__line"></span>
             </article>
 
-            <article class="card-alt">
-                <img src="assets/img/images/card2.png" alt="" class="card-alt__img">
-                <h2 class="card-alt__title">Petição para colocar Kobe Bryant no logo da NBA.</h2>
-                <p class="card-alt__source">Fonte: Daily Mail</p>
-                <span class="card-alt__line nba"></span>
+            <!-- Card em miniatura: Kobe Bryant NBA -->
+            <article class="miniature__card">
+                <img src="assets/img/images/card2.png" alt="Imagem do Kobe Bryant e NBA" class="miniature__card__img">
+                <h2 class="miniature__card__title">Petição para colocar Kobe Bryant no logo da NBA.</h2>
+                <p class="miniature__card__source">Fonte: Daily Mail</p>
+                <span class="miniature__card__line nba"></span>
             </article>
 
-            <article class="card-alt">
-                <img src="assets/img/images/card3.png" alt="" class="card-alt__img">
-                <h2 class="card-alt__title">WhatsApp terá função de pagamentos em 2020.</h2>
-                <p class="card-alt__source">Fonte: Daily Mail</p>
-                <span class="card-alt__line whatsapp"></span>
+            <!-- Card em miniatura: WhatsApp Pagamentos -->
+            <article class="miniature__card">
+                <img src="assets/img/images/card3.png" alt="Imagem do WhatsApp" class="miniature__card__img">
+                <h2 class="miniature__card__title">WhatsApp terá função de pagamentos em 2020.</h2>
+                <p class="miniature__card__source">Fonte: Daily Mail</p>
+                <span class="miniature__card__line whatsapp"></span>
             </article>
-            
         </main>
-    </div>
+
+    </div><!-- Container aplicando fundo branco que sobrepõem o cinza -->
 
     <footer class="footer">
         <section class="footer__logo">
-            <img src="assets/img/images/logo.png" alt="footer__logo__img" class="">
+            <img src="assets/img/images/logo.png" alt="Logo da Mandarin" class="footer__logo__img">
         </section>
 
         <p class="footer__copyright">
             Copyright ® Mandarin. Todos os direitos reservados.<br>
             Caso não deseje mais receber nossos e-mails, por favor 
-            <a href="" class="footer__unsubscribe__link">clique aqui</a>
+            <a href="#" class="footer__copyright__link" id="footer__link">clique aqui</a>
         </p>
     </footer>
+
+    <script src="assets/js/alert.js"></script>
 </body>
 </html>
