@@ -6,8 +6,6 @@
 
 ## O desafio
 
-Utilizando o arquivo que está junto com este documento:
-
 a) Utilizar o arquivo .PSD em um software compatível com arquivo do Adobe Photoshop.
 
 b) Fatar as imagens para poder utilizar no arquivo .html
