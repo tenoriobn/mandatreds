@@ -24,6 +24,10 @@
         &__link {
             color: $hailgray;
             text-decoration: underline;
+
+            &:hover {
+                color: $gray;
+            }
         }
     }
 }
